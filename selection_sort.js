@@ -22,4 +22,4 @@ console.log(selectionSort(array))
 
 console.log(count)
 
-//O(n^2)
+//O(k*n^2), that k - coefficient (like 1/2 or etc), but usually never writting 
