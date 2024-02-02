@@ -10,4 +10,5 @@ function linearSearch(array, item){
 }
 
 console.log(linearSearch(array, 5))
-//4
+
+//O(n)

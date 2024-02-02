@@ -32,3 +32,6 @@ function binarySearch(array, item){
 console.log(binarySearch(array, 11))
 
 console.log(count)
+
+//only for sorted arrays
+//O(log2n)
