@@ -15,6 +15,7 @@ function selectionSort(array){
         array[indexMin] = tmp
         
     }
+    
     return array
 }
 
