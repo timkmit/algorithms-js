@@ -18,3 +18,5 @@ function bubbleSort(array){
 
 console.log(bubbleSort(array))
 console.log(count)
+
+//O(n^2) without coefficient before n^2, then that algo worse than selection dort
