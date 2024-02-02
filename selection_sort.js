@@ -15,10 +15,11 @@ function selectionSort(array){
         array[indexMin] = tmp
         
     }
-    
     return array
 }
 
 console.log(selectionSort(array))
 
 console.log(count)
+
+//O(n^2)
