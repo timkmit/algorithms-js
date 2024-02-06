@@ -1,24 +1,24 @@
-const array = [1,3,2,7,5,6,0,-4,8,-2,9,-1,10,-5]
+const startArray = [1,3,2,7,5,6,0,-4,8,-2,9,-1,10,-5]
 let count = 0
 
-function quickSort(array){
+function quickSort(inputArray){
 
-    if(array.length <= 1){
-        return array
+    if(inputArray.length <= 1){
+        return inputArray
     }
 
-    let pivotIndex = Math.floor(array.length / 2)
-    let pivot = array[pivotIndex]
+    let pivotIndex = Math.floor(inputArray.length / 2)
+    let pivot = inputArray[pivotIndex]
     let less = []
     let greater = []
 
-    for(let i = 0; i < array.length; i++){
+    for(let i = 0; i < inputArray.length; i++){
 
         if(i === pivotIndex) continue
 
-        if(array[i] < pivot){
-            less.push(array[i])
-        } else greater.push(array[i])
+        if(inputArray[i] < pivot){
+            less.push(inputArray[i])
+        } else greater.push(inputArray[i])
         count+=1
 
     }
@@ -26,7 +26,7 @@ function quickSort(array){
 
 }
 
-console.log(quickSort(array))
+console.log(quickSort(startArray))
 
 console.log(count)
 
