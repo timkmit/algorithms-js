@@ -1,10 +1,10 @@
-const array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+const startArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 let count = 0
 
-function binarySearch(array, item){
+function binarySearch(inputArray, item){
 
     let start = 0
-    let end = array.length
+    let end = inputArray.length
     let middle
     let found = false
     let position = -1
@@ -15,12 +15,12 @@ function binarySearch(array, item){
 
         middle = Math.floor((start + end) / 2)
 
-        if(array[middle] === item){
+        if(inputArray[middle] === item){
             found = true
             position = middle
             return position
         }
-        if(item < array[middle]){
+        if(item < inputArray[middle]){
             end = middle - 1
         }else {
             start = middle + 1
@@ -29,7 +29,7 @@ function binarySearch(array, item){
     return position
 }
 
-console.log(binarySearch(array, 11))
+console.log(binarySearch(startArray, 11))
 
 console.log(count)
 
