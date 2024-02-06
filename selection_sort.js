@@ -1,24 +1,24 @@
-const array = [1,3,2,7,5,6,0,-4,8,-2,9,-1,10,-5]
+const startArray = [1,3,2,7,5,6,0,-4,8,-2,9,-1,10,-5]
 let count = 0
 
-function selectionSort(array){
-    for (let i = 0; i < array.length; i++){
+function selectionSort(inputArray){
+    for (let i = 0; i < inputArray.length; i++){
         let indexMin = i
-        for (let j = i + 1; j < array.length; j++){
-            if(array[j] < array[indexMin]){
+        for (let j = i + 1; j < inputArray.length; j++){
+            if(inputArray[j] < inputArray[indexMin]){
                 indexMin = j
             }
             count+=1
         }
-        let tmp = array[i]
-        array[i] = array[indexMin]
-        array[indexMin] = tmp
+        let tmp = inputArray[i]
+        inputArray[i] = inputArray[indexMin]
+        inputArray[indexMin] = tmp
         
     }
-    return array
+    return inputArray
 }
 
-console.log(selectionSort(array))
+console.log(selectionSort(startArray))
 
 console.log(count)
 
